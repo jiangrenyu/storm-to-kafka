@@ -1,0 +1,3 @@
+# storm-to-kafka
+Storm读取kafka消息，然后对用户的行为时间进行统计，统计的时候采用了Storm的定时统计功能，每隔60秒进行统计一次，这个时间是可配置的；
+最后统计完成后利用kafkaBolt将结果写回到kafka的topic中
